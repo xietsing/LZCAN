@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <data>
+        <variable
+            name="can"
+            type="com.xmlenz.lzcan.CanPackagesNum" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/sample_text"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="CAN Service Started!" />-->
+
+        <TextView
+            android:id="@+id/CanView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{can.packNumber1}"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/CanView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{can.packNumber2}"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/CanView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{can.packNumber3}"
+            android:textSize="30sp" />
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textIsSelectable="true"
+            android:lines="80"
+            android:maxLines="100"
+            android:minLines="1" />
+
+
+
+    </LinearLayout>
+
+</layout>
